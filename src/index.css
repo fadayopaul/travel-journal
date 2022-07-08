@@ -52,8 +52,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   max-height: 600px;
-  /* padding-top: 30px; */
-  /* padding-bottom: 20px; */
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -68,22 +66,21 @@ nav {
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
   width: 470px;
-  height: 200px;
+  /* height: 200px; */
 }
 
 .image--crop {
-  min-height: 130px;
-  min-width: 130px;
+  height: 150px;
+  max-width: 130px;
   overflow: hidden;
-  object-fit: cover;
   border-radius: 5px;
 }
 
 .image--crop > img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
   object-fit: cover;
 }
 
@@ -98,15 +95,20 @@ nav {
   align-items: center;
 }
 .location--icon {
-  width: 20px;
+  margin-left: 0;
+  margin-right: 0;
+
+  width: 18px;
 }
 
 .location--country {
-  font-size: 10px;
+  font-size: 8px;
+  text-align: center;
   font-weight: 500;
   color: #2b283a;
 }
 .location--country span {
+  font-size: 8px;
   padding-left: 10px;
   color: #918e9b;
   text-decoration-line: underline;
@@ -141,7 +143,7 @@ nav {
   font-weight: 400;
   font-size: 10px;
   color: #2b283a;
-  max-height: 80px;
+  max-height: 70px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
