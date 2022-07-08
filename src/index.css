@@ -94,8 +94,8 @@ nav {
 }
 
 .location {
-  padding: 7px 0;
-  padding-top: 4px;
+  padding-top: 2px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -133,8 +133,8 @@ nav {
   font-weight: 700;
   font-size: 14px;
   color: #2b283a;
-  margin-bottom: 2px;
-  max-height: 35px;
+  margin-bottom: 5px;
+  max-height: 30px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -149,7 +149,7 @@ nav {
   font-size: 9px;
   line-height: 12px;
   color: #2b283a;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .description {

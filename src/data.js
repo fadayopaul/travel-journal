@@ -11,18 +11,28 @@ export default [
   },
 
   {
+    img: require("./images/johannesburg.jpg"),
+    country: "SOUTH AFRICA",
+    link: "#",
+    title: "Johannesburg",
+    date: "12 Jan, 2021 - 20 Jan, 2021",
+    description:
+      "Johannesburg, South Africa's biggest city and capital of Gauteng province, began as a 19th-century gold-mining settlement. Its sprawling Soweto township was once home to Nelson Mandela and Desmond Tutu. Mandela’s former residence is now the Mandela House museum. Other Soweto museums that recount the struggle to end segregation include the somber Apartheid Museum and Constitution Hill, a former prison complex.",
+  },
+
+  {
     img: require("./images/mount-fuji.jpeg"),
     country: "JAPAN",
     link: "#",
     title: "Mount Fuji",
-    date: "12 Jan, 2021 - 24 Jan, 2021",
+    date: "21 Jan, 2021 - 24 Jan, 2021",
     description:
       "Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.",
   },
 
   {
     img: require("./images/geirangerfjord.jpeg"),
-    country: "Norway",
+    country: "NORWAY",
     link: "#",
     title: "Geirangerfjord",
     date: "01 Oct, 2021 - 18 Nov, 2021",
