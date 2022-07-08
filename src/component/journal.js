@@ -4,7 +4,7 @@ export default function Journal(props) {
   return (
     <div className="journal">
       <div className="image--crop">
-        <img src={props.item.img} alt="" />
+        <img src={props.item.img} alt="" className="image" />
       </div>
 
       <div className="information">
