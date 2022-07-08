@@ -1,13 +1,142 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #eeeeee;
+  font-family: Inter;
+}
+
+/* container */
+.container {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  background-color: white;
+  max-width: 550px;
+  height: 704px;
+  border-radius: 8px;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(to right, #390068, #68004b);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 1px 1px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.16);
+}
+
+.logo {
+  padding-right: 5px;
+  width: 24px;
+}
+
+.logo--text {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.075em;
+}
+/* journals */
+
+.journal--container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 650px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.journal--container::-webkit-scrollbar {
+  display: none;
+}
+
+.journal {
+  padding: 0 10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 470px;
+  height: 200px;
+}
+
+.image--crop {
+  min-height: 160px;
+  min-width: 130px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.image--crop > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.information {
+  margin: 0 15px;
+}
+
+.location {
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+}
+.location--icon {
+  width: 20px;
+}
+
+.location--country {
+  font-size: 10px;
+  font-weight: 500;
+  color: #2b283a;
+}
+.location--country span {
+  padding-left: 10px;
+  color: #918e9b;
+  text-decoration-line: underline;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #2b283a;
+  margin-bottom: 7px;
+  line-height: 30px;
+}
+.date {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #2b283a;
+  margin-bottom: 9px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 10px;
+  text-justify: newspaper;
+  line-height: 15px;
+  color: #2b283a;
+  max-height: 70px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.description::-webkit-scrollbar {
+  display: none;
 }
