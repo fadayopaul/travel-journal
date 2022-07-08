@@ -11,35 +11,38 @@ body {
 /* container */
 .container {
   position: static;
+  /* padding: 0 15px; */
   display: flex;
   flex-wrap: wrap;
   margin: 5px auto;
   background-color: white;
   max-width: 550px;
-  height: 704px;
+  height: 670px;
   border-radius: 8px;
 }
 
 /* Navbar */
 nav {
+  position: sticky, -webkit-sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to right, #390068, #68004b);
   height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 550px;
   align-items: center;
   border-radius: 5px 5px 1px 1px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.16);
 }
 
 .logo {
-  padding-right: 5px;
+  margin-left: 10px;
   width: 24px;
 }
 
 .logo--text {
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: -0.075em;
 }
@@ -48,8 +51,9 @@ nav {
 .journal--container {
   display: flex;
   flex-wrap: wrap;
-  max-height: 650px;
-  padding-bottom: 20px;
+  max-height: 600px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -61,8 +65,7 @@ nav {
 }
 
 .journal {
-  padding: 0 10px;
-  padding-top: 30px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -71,7 +74,7 @@ nav {
 }
 
 .image--crop {
-  min-height: 160px;
+  min-height: 130px;
   min-width: 130px;
   overflow: hidden;
   object-fit: cover;
@@ -86,6 +89,7 @@ nav {
 
 .information {
   margin: 0 15px;
+  padding: 0 15px;
 }
 
 .location {
@@ -111,11 +115,20 @@ nav {
 
 .title {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 15px;
   color: #2b283a;
   margin-bottom: 7px;
-  line-height: 30px;
+
+  max-height: 35px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.title::-webkit-scrollbar {
+  display: none;
+}
+
 .date {
   font-weight: 700;
   font-size: 10px;
@@ -127,10 +140,8 @@ nav {
 .description {
   font-weight: 400;
   font-size: 10px;
-  text-justify: newspaper;
-  line-height: 15px;
   color: #2b283a;
-  max-height: 70px;
+  max-height: 80px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
