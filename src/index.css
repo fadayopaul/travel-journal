@@ -72,7 +72,9 @@ nav {
 }
 
 .image--crop {
-  height: 150px;
+  min-height: 150px;
+  max-height: 160px;
+  min-width: 130px;
   max-width: 130px;
   overflow: hidden;
   border-radius: 5px;
@@ -85,29 +87,35 @@ nav {
 }
 
 .information {
-  margin: 0 15px;
-  padding: 0 15px;
+  margin: 0 10px;
 }
 
 .location {
-  margin: 7px 0;
+  padding: 7px 0;
+  padding-top: 1px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
 }
 .location--icon {
-  margin-left: 0;
-  margin-right: 0;
-
+  display: flex;
+  justify-content: flex-start;
   width: 18px;
+  height: 12px;
 }
 
 .location--country {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-size: 8px;
   text-align: center;
   font-weight: 500;
   color: #2b283a;
 }
 .location--country span {
+  display: flex;
   font-size: 8px;
   padding-left: 10px;
   color: #918e9b;

@@ -9,11 +9,13 @@ export default function Journal(props) {
 
       <div className="information">
         <div className="location">
-          <img
-            src={require("../images/location-icon.png")}
-            className="location--icon"
-            alt=""
-          />
+          {
+            <img
+              src={require("../images/location-icon.png")}
+              className="location--icon"
+              alt=""
+            />
+          }
           <p className="location--country">
             {props.item.country}
             <a href={props.item.link}>
