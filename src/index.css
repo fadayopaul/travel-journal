@@ -1,19 +1,19 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #eeeeee;
   font-family: "Inter", sans-serif;
-  height: 100vh;
+  height: 100%;
 }
-
 
 /* container */
 .container {
   margin: 0px auto;
-  background-color: #91e90f;
+  background-color: white;
   max-width: 550px;
   border-radius: 8px;
 }
@@ -21,21 +21,21 @@ body {
 /* Navbar */
 .nav--body {
   display: flex;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #390068, #68004b);
   height: 40px;
   border-radius: 5px 5px 1px 1px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.16);
-  background: linear-gradient(to right, #390068, #68004b);
-
 }
 
 .nav-bar-items {
   display: flex;
   flex-wrap: wrap;
 }
-
 .logo {
   margin-right: 5px;
   width: 17px;
@@ -47,20 +47,19 @@ body {
   font-size: 13px;
   font-weight: 500;
 }
-
-
 /* journals */
 
 .journal--container {
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 700px;
+  scroll-behavior: smooth;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 30px;
   background-color: #fff;
 }
 
@@ -69,10 +68,11 @@ body {
 }
 
 .journal {
-  padding: 10px 20px;
+  padding: 20px 20px;
   display: flex;
   margin: 0px auto;
-  max-width: 470px;
+  width: 470px;
+  height: 160px;
 }
 
 .image--crop {
@@ -111,7 +111,6 @@ body {
 .location--country {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   text-align: center;
   font-size: 8px;
   text-align: center;
@@ -158,8 +157,9 @@ body {
   font-size: 10px;
   color: #2b283a;
   padding-right: 5px;
-  max-height: 70px;
+  max-height: 75px;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
