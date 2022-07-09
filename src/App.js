@@ -9,10 +9,10 @@ function App() {
     return <Journal item={items} />;
   });
   return (
-    <div className="container">
-      <Navbar />
-      <div className="journal--container">{journals}</div>
-    </div>
+        <div className="container">
+          <Navbar />
+          <div className="journal--container">{journals}</div>
+        </div>
   );
 }
 
